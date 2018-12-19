@@ -9,6 +9,7 @@ public class CardDatabase {
 		cardData.add(new CardClass("Fire Resource", 0003, 10, 10, 3));
 		cardData.add(new CardClass("Earth Resource", 0004, 10, 10, 4));
 		cardData.add(new CardClass("Panzer-Hydra", 0005, 1000, 2500, 5));
+		cardData.add(new CardClass("Knight", 0006, 500, 750, 6));
 	}
 	
 	public void cardSearch(int qCardID)
