@@ -8,9 +8,11 @@ public class WorldEngineMain {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		Random generator = new Random();
+		CardDatabase cDatabase = new CardDatabase();
 		System.out.println("Welcome to the World Engine!");
 		System.out.println("The Game Engine Written by: Adam Negron");
 		boolean gameIsRunning = true;
+		int menuChoice = -1;
 		while(gameIsRunning = true)
 		{
 			System.out.println("Welcome to the main menu!");
@@ -19,7 +21,27 @@ public class WorldEngineMain {
 			System.out.println("2. Card Inventory");
 			System.out.println("3. Card Finder");
 			System.out.println("4. Quit");
+			menuChoice = input.nextInt();
+			switch(menuChoice)
+			{
+			case 1:
+				
+			break;
+				
+			case 2:
+				
+			break;
+			
+			case 3:
+				
+			break;
+			
+			case 4:
+				gameIsRunning = false;
+			break;
+			}
 		}
+		
 	}
-
+	
 }

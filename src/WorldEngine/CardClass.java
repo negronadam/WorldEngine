@@ -7,16 +7,19 @@ public class CardClass {
 	private double cardHP;
 	private double cardMP;
 	private String cardName;
-	CardClass[] cards = new CardClass[150];
 	public CardClass()
 	{
 		cardID = 0;
 		
 	}
 	
-	public void card()
+	public CardClass(String xCardName,int xCardID, double xCardHP, double xCardMP, int xCardNumbers)
 	{
-		
+		xCardName = cardName;
+		xCardID = cardID;
+		xCardHP = cardHP;
+		xCardMP = cardMP;
+		xCardNumbers = cardNumbers;
 	}
 	
 	public void getCard (int cardNumber)
@@ -24,12 +27,5 @@ public class CardClass {
 		
 	}
 	
-	public void shuffleCards()
-	{
-		for(int i = 0; i < cards.length - 50; i++)
-		{
-			int randomnum = 1 - generator.nextInt(50 - 1 + 1);
-			 
-		}
-	}
+	
 }
