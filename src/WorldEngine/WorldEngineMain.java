@@ -30,6 +30,11 @@ public class WorldEngineMain {
 				
 			case 2:
 				
+				for(int a = 0; a < cDatabase.databaseSize(); a++)
+				{
+					System.out.println(cDatabase.toString());
+				}
+				
 			break;
 			
 			case 3:
