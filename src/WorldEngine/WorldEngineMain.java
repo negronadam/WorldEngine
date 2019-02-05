@@ -2,7 +2,14 @@ package WorldEngine;
 import java.util.Scanner;
 import java.util.Random;
 import java.util.ArrayList;
-public class WorldEngineMain {
+public class WorldEngineMain extends CardDatabase {
+	
+	public static void cards()
+	{
+		ArrayList<Card> cards = new ArrayList<Card>();
+		cards.add(new Card("Test", 5, 5, 5, 1));
+		cards.add(new Card("Test2", 7, 8, 7, 2));
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -20,7 +27,8 @@ public class WorldEngineMain {
 			System.out.println("1. Start Card Game");
 			System.out.println("2. Card Inventory");
 			System.out.println("3. Card Finder");
-			System.out.println("4. Quit");
+			System.out.println("4. Card Database Size");
+			System.out.println("5. Quit");
 			menuChoice = input.nextInt();
 			switch(menuChoice)
 			{
@@ -30,18 +38,18 @@ public class WorldEngineMain {
 				
 			case 2:
 				
-				for(int a = 0; a < cDatabase.databaseSize(); a++)
-				{
-					System.out.println(cDatabase.toString());
-				}
 				
 			break;
 			
 			case 3:
+				cDatabase.getCard(2).toString();
 				
 			break;
 			
 			case 4:
+				System.out.println(cDatabase.databaseSize());
+				break;
+			case 5:
 				gameIsRunning = false;
 			break;
 			}
