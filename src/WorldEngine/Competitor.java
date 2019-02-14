@@ -8,4 +8,14 @@ public class Competitor {
 		xName = name;
 		xAge = age;
 	}
+	
+	public void setName(String xName)
+	{
+		xName = name;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
 }
